@@ -1,7 +1,13 @@
-# ToGoApp
-## Front-end
+# 🎯ToGoApp
+## 🖥️Front-end
 React + TypeScript
-## Back-end
+## 🌐Back-end
 Go + Fiber
-## DataBase
+## 💾DataBase
 No database for now
+## ✨Future Features
+<ul>
+  <li>Temporary To dos</li>
+  <li>Long term To dos</li>
+  <li>Login</li>
+</ul>
