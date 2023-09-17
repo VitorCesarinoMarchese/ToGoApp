@@ -1,4 +1,5 @@
 # 🎯 ToGoApp
+
 ## ✅ Features
 <ul>
   <li>Long term To dos</li>
@@ -6,10 +7,12 @@
 
 ## 🖥️ Front-end
 React + TypeScript
+
 ## 🌐 Back-end
 Go + Fiber
+
 ## 💾 DataBase
-No database for now
+SQLite + GORM
 
 ## ✨ Future Features
 <ul>
