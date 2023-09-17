@@ -1,14 +1,16 @@
 # 🎯 ToGoApp
+## ✅ Features
+<ul>
+  <li>Long term To dos</li>
+</ul>
+
 ## 🖥️ Front-end
 React + TypeScript
 ## 🌐 Back-end
 Go + Fiber
 ## 💾 DataBase
 No database for now
-## ✨ Features
-<ul>
-  <li>Long term To dos</li>
-</ul>
+
 ## ✨ Future Features
 <ul>
   <li>Temporary To dos</li>
