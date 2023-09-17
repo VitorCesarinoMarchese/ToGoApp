@@ -5,7 +5,7 @@ import {Modal, Group, Button, TextInput, Textarea} from '@mantine/core'
 import { ENDPOINT, Todo } from '../App'
 import { KeyedMutator } from 'swr'
 
-function AddTodo({mutate}: {mutate: KeyedMutator<Todo[]>}){
+function AddTodo({mutate}: {mutate: KeyedMutator<Todo[]>}, {data}: {data: Todo[]}){
     const [open, setOpen] = useState(false)
 
     const form = useForm({
@@ -24,7 +24,7 @@ function AddTodo({mutate}: {mutate: KeyedMutator<Todo[]>}){
             body: JSON.stringify(values)
         }).then((r)=> r.json())
 
-        mutate(update)
+        mutate(data, update)
         form.reset()
         setOpen(false)
     }

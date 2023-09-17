@@ -21,12 +21,11 @@ function App() {
     const update = await fetch(`${ENDPOINT}/api/todos/${id}/done`,{
       method: 'PATCH'
     }).then((r)=> r.json())
-
-    mutate(update)
+    
+    mutate(data, update)
   }
 
-  const {data, mutate} = useSWR<Todo[]>('api/todos', fetcher)
-
+  const { data, mutate } = useSWR<Todo[]>('api/todos', fetcher);
   return (
     <>
       <Box
@@ -41,8 +40,8 @@ function App() {
         {data?.map((todo)=> {
           return(
             <List.Item 
-            onClick={()=> MarkAsDone(todo.id)}
-            key={`todo__${todo.id}`} 
+            onClick={()=> MarkAsDone(todo.ID)}
+            key={`todo__${todo.ID}`} 
             icon={
               todo.done ? (
                 <ThemeIcon color="teal" size={24} radius="xl">
@@ -59,7 +58,7 @@ function App() {
           )
         })}
         </List>
-        <AddTodo mutate={mutate}/>
+        <AddTodo mutate={mutate} data={data}/>
       </Box>
     </>
   )
