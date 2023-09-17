@@ -2,6 +2,7 @@
 
 ## ✅ Features
 <ul>
+  <li>A to do List</li>
   <li>Long term To dos</li>
 </ul>
 
