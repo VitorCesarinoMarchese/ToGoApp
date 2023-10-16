@@ -1,4 +1,3 @@
-import React from 'react'
 import {useState} from "react"
 import {useForm} from '@mantine/form'
 import {Modal, Group, Button, TextInput, Textarea} from '@mantine/core'
@@ -51,7 +50,7 @@ function AddTodo({mutate}: {mutate: KeyedMutator<Todo[]>}, {data}: {data: Todo[]
             </form>
         </Modal>
         <Group position='center'>
-            <Button fullWidth mb={12} onClick={()=> setOpen(true)}>
+            <Button mb={12} onClick={()=> setOpen(true)}>
                 Add todo
             </Button>
         </Group>
